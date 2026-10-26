@@ -1,16 +1,14 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>About Laravel POS</h1>
+    <h1>About</h1>
 
-    <p>
-        Laravel POS is a simple Point of Sale foundation project
-        created for Technical Formative Assessment 5.
-    </p>
-
-    <p>
-        It uses Laravel MVC architecture. Routes direct requests to
-        controllers, controllers process data, and Blade views display
-        the output in the browser.
-    </p>
+    <div class="about-content">
+        <p><strong>Developer:</strong> Hayden Bert Y. Yu</p>
+        <p><strong>Course:</strong> IT0049 - Web System Technologies</p>
+        <p><strong>Assessment:</strong> TSA3 - Tasks for Today Management System in Laravel</p>
+        <p><strong>Section:</strong> AC31</p>
+        <p><strong>Professor:</strong> Ms. Canlas</p>
+        <p><strong>School:</strong> College of Computer Studies and Multimedia Arts</p>
+    </div>
 @endsection

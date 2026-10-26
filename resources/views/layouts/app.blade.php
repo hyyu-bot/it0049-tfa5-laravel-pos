@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Laravel POS</title>
+    <title>Tasks for Today</title>
 
     <style>
         body {
@@ -39,6 +39,16 @@
             box-shadow: 0 2px 8px rgba(0, 0, 0, 0.10);
         }
 
+        h1 {
+            margin-top: 0;
+            color: #1f4e79;
+        }
+
+        .subtitle {
+            color: #666;
+            margin-bottom: 20px;
+        }
+
         table {
             width: 100%;
             border-collapse: collapse;
@@ -59,15 +69,79 @@
         tr:nth-child(even) {
             background: #f2f2f2;
         }
+
+        .badge {
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            color: white;
+            font-weight: bold;
+        }
+
+        .badge-pending { background-color: #ff9800; }
+        .badge-completed { background-color: #4CAF50; }
+        .badge-on_hold { background-color: #9E9E9E; }
+
+        .btn {
+            display: inline-block;
+            padding: 6px 12px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            text-decoration: none;
+            font-size: 14px;
+        }
+
+        .btn-edit {
+            background-color: #2196F3;
+            color: white;
+        }
+
+        .empty {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .profile-card {
+            background: #f9f9f9;
+            padding: 20px;
+            border-radius: 8px;
+            border: 1px solid #ddd;
+        }
+
+        .profile-field {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .profile-field:last-child {
+            border-bottom: none;
+        }
+
+        .profile-field label {
+            font-weight: bold;
+            display: inline-block;
+            width: 120px;
+            color: #1f4e79;
+        }
+
+        .about-content {
+            line-height: 1.8;
+        }
+
+        .about-content p {
+            margin: 8px 0;
+        }
     </style>
 </head>
 <body>
 
     <nav>
         <a href="{{ route('home') }}">Home</a>
+        <a href="{{ route('tasks.index') }}">All Tasks</a>
+        <a href="{{ route('profile.show') }}">Profile</a>
         <a href="{{ route('about') }}">About</a>
-        <a href="{{ route('customers.index') }}">Customer Accounts</a>
-        <a href="{{ route('users.index') }}">User Accounts</a>
     </nav>
 
     <div class="container">
