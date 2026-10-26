@@ -1,21 +1,15 @@
 @extends('layouts.app')
 
 @section('content')
-    <h1>Laravel POS System</h1>
-
-    <p>Welcome to the Laravel Point of Sale System.</p>
+    <h1>Welcome to Laravel POS</h1>
 
     <p>
-        This application demonstrates Laravel routes, controllers,
-        Blade templates, navigation links, and static PHP array data.
+        This is the landing page for the Laravel POS application,
+        built for IT0049 Technical Formative Assessment 5.
     </p>
 
-    <h2>Available Pages</h2>
-
-    <ul>
-        <li>Home Page</li>
-        <li>About Page</li>
-        <li>Customer Accounts</li>
-        <li>User Accounts</li>
-    </ul>
+    <p>
+        Use the navigation above to explore the available pages,
+        including the Customer Accounts and User Accounts pages.
+    </p>
 @endsection
